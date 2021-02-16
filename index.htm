@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+    <head>
+        <title>T32 - Ejercicio 14</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/codigo.js"></script>
+    </head>
+    <body>
+        <div id="calculadora">
+            <p id="memoria" hidden></p>
+            <p id="operador" hidden></p>
+            <p id="punto" hidden>false</p>
+            <div id="resultado">0</div>
+            <div id="acciones">
+                <p>
+                    <button onclick="Retr()" class="botonAccion">Retr</button>
+                    <button onclick="CE()" class="botonAccion">CE</button>
+                    <button onclick="C()" class="botonAccion">C</button>
+                </p>
+            </div>
+            <div id="botones">
+                <p>
+                    <button type="number" onclick="InsertNumber(7)" class="boton">7</button>
+                    <button type="number" onclick="InsertNumber(8)" class="boton">8</button>
+                    <button type="number" onclick="InsertNumber(9)" class="boton">9</button>
+                    <button onclick="SetOperator('/')" class="boton">/</button>
+                    <button onclick="SetOperator('Raiz')" class="boton">Raiz</button>
+                </p>
+                <p>
+                    <button onclick="InsertNumber(4)" class="boton">4</button>
+                    <button onclick="InsertNumber(5)" class="boton">5</button>
+                    <button onclick="InsertNumber(6)" class="boton">6</button>
+                    <button onclick="SetOperator('*')" class="boton">*</button>
+                    <button onclick="SetOperator('%')" class="boton">%</button>
+                </p>
+                <p>
+                    <button onclick="InsertNumber(1)" class="boton">1</button>
+                    <button onclick="InsertNumber(2)" class="boton">2</button>
+                    <button onclick="InsertNumber(3)" class="boton">3</button>
+                    <button onclick="SetOperator('-')" class="boton">-</button>
+                    <button onclick="SetOperator('1/x')" class="boton">1/x</button>
+                </p>
+                <p>
+                    <button onclick="InsertNumber(0)" class="boton">0</button>
+                    <button onclick="SetOperator('+/-')" class="boton">+/-</button>
+                    <button onclick="InsertDot()" class="boton">.</button>
+                    <button onclick="SetOperator('+')" class="boton">+</button>
+                    <button onclick="MakeOp()" class="boton">=</button>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
